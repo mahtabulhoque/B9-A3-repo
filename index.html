@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B9A3-Project</title>
+
+    <!-- Tailwind and Daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="max-w-[1440px] mx-auto">
+    <!-- header Section -->
+    <header>
+      <nav class="gap-2 flex justify-between items-center font-manrope py-8">
+        <div class="lg:hidden ml-5 w-[24px] h-[24px]">
+          <img src="./Frame(2).svg" alt="" />
+        </div>
+        <h2 class="text-2xl lg:text-4xl font-extrabold text-[#131318]">
+          Hockey<span class="text-[#FF4240]">’</span>s
+        </h2>
+        <div class="">
+          <ul
+            class="hidden lg:flex justify-center items-center gap-11 font-normal text-[#424247]"
+          >
+            <li>
+              <a href="#"><span class="text-[#FF4240]">Home</span></a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="flex justify-center items-center gap-2">
+          <div class="w-0 h-0 lg:w-[24px] h-[24px]">
+            <img src="./Images/Frame(2).svg" alt="" />
+          </div>
+          <button
+            class="btn sm:btn-sm lg:btn-lg text-white text-xl font-semibold bg-[#FF4240] rounded-lg"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full rounded-2xl">
+        <div
+          class="absolute bg-[#131318] invisible lg:visible w-1/2 p-8 rounded-md bottom-16 right-14 font-Manrope text-white"
+        >
+          <h5 class="text-[24px] font-extrabold">
+            Meet all the heroes from the field
+          </h5>
+          <p class="text-[#FFFFFF99] text-[16px] font-normal">
+            Hockey players are highly skilled and dedicated athletes who
+            contribute to the thrilling and competitive nature of the sport
+          </p>
+        </div>
+        <img src="./Images/1.png" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./Images/1.png" class="w-full" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-[#131318] mx-2 my-3 h-28 lg:hidden rounded-md font-Manrope text-white text-center"
+    >
+      <h5 class="text-[20px] p-1 font-extrabold">
+        Meet all the heroes from the field
+      </h5>
+      <p class="text-[#FFFFFF99] p-1 text-[13px] font-normal">
+        Hockey players are highly skilled and dedicated athletes who contribute
+        to the thrilling and competitive nature of the sport
+      </p>
+    </div>
+
+    <!-- main section  -->
+    <main>
+      <section>
+        <hr class="bg-[#13131833] mt-7 lg:mt-24 border-dashed" />
+        <div class="text-center mx-auto mt-4 lg:mt-8">
+          <h3
+            class="text-[#131318] font-manrope font-extrabold text-[20px] lg:text-[36px]"
+          >
+            Professional Hockeys Club
+          </h3>
+          <p
+            class="text-[#13131899] font-manrope text-[12px] lg:text-[16px] lg:mt-4"
+          >
+            Home to some of the finest athletes in the game, our players embody
+            skill, determination, and the true spirit of hockey. <br />
+            Hockey is a fast-paced and exciting sport played on ice, and hockey
+            players are the skilled athletes who participate in this challenging
+            game.
+          </p>
+        </div>
+        <div>
+          <hr class="bg-[#13131833] mt-7 lg:mt-20 border-dashed" />
+        </div>
+      </section>
+
+      <!-- Progress radious -->
+
+      <div class="flex-row my-7 text-center lg:flex justify-between gap-6">
+        <div class="">
+          <div
+            class="radial-progress roun text-orange-600"
+            style="--value: 87"
+            role="progressbar"
+          >
+            <span class="text-black text-xl text-center font-extrabold"
+              >87%</span
+            >
+          </div>
+          <h2 class="text-[#131318] text-[20px] font-bold font-Manrope">
+            Prayer Facility
+          </h2>
+          <p
+            class="text-[#13131899] font-manrope font-bold text-[12px] lg:text-[16px] mt-2"
+          >
+            In addition to specific prayer rooms, some facilities may have
+            multi-faith spaces designed to be inclusive for individuals of
+            different religious traditions.
+          </p>
+        </div>
+        <div class="mt-7 lg:mt-0">
+          <div
+            class="radial-progress roun text-green-500"
+            style="--value: 95"
+            role="progressbar"
+          >
+            <span class="text-black text-xl text-center font-extrabold"
+              >95%</span
+            >
+          </div>
+
+          <h2 class="text-[#131318] text-[20px] font-bold font-Manrope">
+            Experienced Coach
+          </h2>
+          <p
+            class="text-[#13131899] font-manrope text-[12px] lg:text-[16px] font-bold mt-2"
+          >
+            Our coaches understand that every athlete is unique. They tailor
+            their coaching approach to meet your individual needs, focusing on
+            your strengths and addressing areas for improvement.
+          </p>
+        </div>
+        <div class="mt-7 lg:mt-0">
+          <div
+            class="radial-progress roun text-yellow-500"
+            style="--value: 90"
+            role="progressbar"
+          >
+            <span class="text-black text-xl text-center font-extrabold"
+              >90%</span
+            >
+          </div>
+          <h2 class="text-[#131318] text-[20px] font-bold font-Manrope">
+            Senior Player
+          </h2>
+          <p
+            class="text-[#13131899] font-manrope text-[12px] lg:text-[16px] font-bold mt-2"
+          >
+            Join us in celebrating the incredible journey of our senior player,
+            as they continue to lead our team to victory and inspire future
+            generations of hockey enthusiasts!
+          </p>
+        </div>
+        <div class="mt-7 lg:mt-0">
+          <div
+            class="radial-progress roun text-blue-400"
+            style="--value: 80"
+            role="progressbar"
+          >
+            <span class="text-black text-xl text-center font-extrabold"
+              >80%</span
+            >
+          </div>
+          <h2 class="text-[#131318] text-[20px] font-bold font-Manrope">
+            Training Ground
+          </h2>
+          <p
+            class="text-[#13131899] font-manrope text-[12px] lg:text-[16px] font-bold mt-2"
+          >
+            Welcome to Our Premier Training Ground: Where Excellence Takes
+            Center Ice!
+          </p>
+        </div>
+      </div>
+
+      <!-- Program Section -->
+
+      <section>
+        <div>
+          <hr class="bg-[#13131833] mt-7 lg:mt-20 border-dashed" />
+        </div>
+        <div class="text-center mx-auto mt-4 lg:mt-8">
+          <h3
+            class="text-[#131318] font-manrope font-extrabold text-[20px] lg:text-[36px]"
+          >
+            Program Sections
+          </h3>
+          <p
+            class="text-[#13131899] font-manrope text-[12px] lg:text-[16px] lg:mt-4"
+          >
+            For players involved in competitive leagues, team training is a
+            crucial component of the program.
+            <br />
+            Regular practices, tactical sessions, and strategy discussions
+            contribute to team cohesion and performance.
+          </p>
+        </div>
+        <div>
+          <hr class="bg-[#13131833] mt-7 lg:mt-20 border-dashed" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+  </body>
+</html>
